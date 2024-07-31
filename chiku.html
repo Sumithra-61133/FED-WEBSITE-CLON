@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terracotta Treasures</title>
+    <link rel="stylesheet" href="chiku.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="chi1.jpg" alt="Terracotta Treasures ">
+            </div>
+            <h1 class="site-name">Terracotta Treasures</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+        <section id="home" class="hero">
+            <h1>Welcome to Terracotta Treasures!</h1>
+            <p>Explore our exquisite collection of terracotta products.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </section>
+    </header>
+    
+    <main>
+        <section id="shop" class="shop">
+            <h2>Our Products</h2>
+
+            <!-- Jewellery Category -->
+            <div class="category">
+                <img src="s11.jpg" alt="Jewellery" class="category-icon">
+                <h3>Jewellery</h3>
+                <div class="category-items">
+                    <!-- Jhumkas -->
+                    <div class="item">
+                        <a href="#jhumka1">
+                            <img src="img1.jfif" alt="Jhumka 1" class="item-image">
+                        </a>
+                        <h4>Jhumka 1</h4>
+                        <p>₹500</p>
+                        <button onclick="addToCart('Jhumka 1', 500)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful design!" - Ayesha</p>
+                            <p>"Great craftsmanship." - Neha</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#jhumka2">
+                            <img src="img2.jfif" alt="Jhumka 2" class="item-image">
+                        </a>
+                        <h4>Jhumka 2</h4>
+                        <p>₹520</p>
+                        <button onclick="addToCart('Jhumka 2', 520)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            
+                            <p>"Amazing quality." - Sneha</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#jhumka3">
+                            <img src="img3.jfif"alt="Jhumka 3" class="item-image">
+                        </a>
+                        <h4>Jhumka 3</h4>
+                        <p>₹530</p>
+                        <button onclick="addToCart('Jhumka 3', 530)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely design." - Aarti</p>
+                            <p>"Highly recommended." - Kavita</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#jhumka4">
+                            <img src="img4.jpeg" alt="Jhumka 4" class="item-image">
+                        </a>
+                        <h4>Jhumka 4</h4>
+                        <p>₹550</p>
+                        <button onclick="addToCart('Jhumka 4', 550)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Stunning piece!" - Riya</p>
+                            <p>"Very stylish." - Meena</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#jhumka5">
+                            <img src="img5.jtif.jfif" alt="Jhumka 5" class="item-image">
+                        </a>
+                        <h4>Jhumka 5</h4>
+                        <p>₹560</p>
+                        <button onclick="addToCart('Jhumka 5', 560)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful and elegant." - Anu</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planters Category -->
+            <div class="category">
+                <img src="plogo.jfif" alt="Planters" class="category-icon">
+                <h3>Planters</h3>
+                <div class="category-items">
+                    <div class="item">
+                        <a href="#planter1">
+                            <img src="pl1.jfif" alt="Planter 1" class="item-image">
+                        </a>
+                        <h4>Planter 1</h4>
+                        <p>₹450</p>
+                        <button onclick="addToCart('Planter 1', 450)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely planter!" - Simran</p>
+                            <p>"Great for my garden." - Manoj</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#planter2">
+                            <img src="pl2.webp" alt="Planter 2" class="item-image">
+                        </a>
+                        <h4>Planter 2</h4>
+                        <p>₹470</p>
+                        <button onclick="addToCart('Planter 2', 470)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Very elegant." - Neha</p>
+                            <p>"Perfect for my home." - Rahul</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#planter3">
+                            <img src="pl3.jpg" alt="Planter 3" class="item-image">
+                        </a>
+                        <h4>Planter 3</h4>
+                        <p>₹480</p>
+                        <button onclick="addToCart('Planter 3', 480)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Stylish and durable." - Ankit</p>
+                            <p>"Highly recommend." - Anjali</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#planter4">
+                            <img src="pl4.jfif" alt="Planter 4" class="item-image">
+                        </a>
+                        <h4>Planter 4</h4>
+                        <p>₹490</p>
+                        <button onclick="addToCart('Planter 4', 490)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful piece!" - Rohit</p>
+                            <p>"Great quality." - Shweta</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#planter5">
+                            <img src="pl5.png" alt="Planter 5" class="item-image">
+                        </a>
+                        <h4>Planter 5</h4>
+                        <p>₹500</p>
+                        <button onclick="addToCart('Planter 5', 500)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Very artistic." - Alok</p>
+                            <p>"Love the design!" - Pooja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wind Chimes Category -->
+            <div class="category">
+                <img src="wlogo.jpg" alt="Wind Chimes" class="category-icon">
+                <h3>Wind Chimes</h3>
+                <div class="category-items">
+                    <div class="item">
+                        <a href="#wind-chime1">
+                            <img src="w1.jpg" alt="Wind Chime 1" class="item-image">
+                        </a>
+                        <h4>Wind Chime 1</h4>
+                        <p>₹300</p>
+                        <button onclick="addToCart('Wind Chime 1', 300)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely sound!" - Sita</p>
+                            <p>"Very calming." - Gaurav</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#wind-chime2">
+                            <img src="w2.webp" alt="Wind Chime 2" class="item-image">
+                        </a>
+                        <h4>Wind Chime 2</h4>
+                        <p>₹320</p>
+                        <button onclick="addToCart('Wind Chime 2', 320)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            
+                            <p>"Great sound." - Lata</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#wind-chime3">
+                            <img src="w3.jpg" alt="Wind Chime 3" class="item-image">
+                        </a>
+                        <h4>Wind Chime 3</h4>
+                        <p>₹330</p>
+                        <button onclick="addToCart('Wind Chime 3', 330)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Soothing sound." - Anil</p>
+                            <p>"Highly recommended." - Rekha</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#wind-chime4">
+                            <img src="w4.jfif" alt="Wind Chime 4" class="item-image">
+                        </a>
+                        <h4>Wind Chime 4</h4>
+                        <p>₹340</p>
+                        <button onclick="addToCart('Wind Chime 4', 340)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely sound!" - Sita</p>
+                            <p>"Very calming." - Gaurav</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#wind-chime5">
+                            <img src="w5.jfif" alt="Wind Chime 5" class="item-image">
+                        </a>
+                        <h4>Wind Chime 5</h4>
+                        <p>₹350</p>
+                        <button onclick="addToCart('Wind Chime 5', 350)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful design!" - Karan</p>
+                            <p>"Great sound." - Lata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Potteries Category -->
+            <div class="category">
+                <img src="plogo.png" alt="Potteries" class="category-icon">
+                <h3>Potteries</h3>
+                <div class="category-items">
+                    <div class="item">
+                        <a href="#pottery1">
+                            <img src="p1.webp" alt="Pottery 1" class="item-image">
+                        </a>
+                        <h4>Pottery 1</h4>
+                        <p>₹400</p>
+                        <button onclick="addToCart('Pottery 1', 400)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful craftsmanship." - Ramesh</p>
+                            <p>"Very durable." - Leena</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#pottery2">
+                            <img src="p2.webp" alt="Pottery 2" class="item-image">
+                        </a>
+                        <h4>Pottery 2</h4>
+                        <p>₹420</p>
+                        <button onclick="addToCart('Pottery 2', 420)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Excellent design!" - Pankaj</p>
+                            <p>"Highly recommended." - Sapna</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#pottery3">
+                            <img src="p3.jfif" alt="Pottery 3" class="item-image">
+                        </a>
+                        <h4>Pottery 3</h4>
+                        <p>₹430</p>
+                        <button onclick="addToCart('Pottery 3', 430)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely piece." - Anita</p>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#pottery4">
+                            <img src="p4.jfif" alt="Pottery 4" class="item-image">
+                        </a>
+                        <h4>Pottery 4</h4>
+                        <p>₹440</p>
+                        <button onclick="addToCart('Pottery 4', 440)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful design." - Asha</p>
+                            <p>"Very artistic." - Kiran</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#pottery5">
+                            <img src="p5.jfif" alt="Pottery 5" class="item-image">
+                        </a>
+                        <h4>Pottery 5</h4>
+                        <p>₹450</p>
+                        <button onclick="addToCart('Pottery 5', 450)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Excellent quality!" - Nisha</p>
+                            <p>"Very elegant." - Raj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Light Holders Category -->
+            <div class="category">
+                <img src="llogo.webp" alt="Light Holders" class="category-icon">
+                <h3>Light Holders</h3>
+                <div class="category-items">
+                    <div class="item">
+                        <a href="#light-holder1">
+                            <img src="l1.webp" alt="Light Holder 1" class="item-image">
+                        </a>
+                        <h4>Light Holder 1</h4>
+                        <p>₹350</p>
+                        <button onclick="addToCart('Light Holder 1', 350)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful light holder." - Vinay</p>
+                            <p>"Very elegant." - Meera</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#light-holder2">
+                            <img src="l2.jpg" alt="Light Holder 2" class="item-image">
+                        </a>
+                        <h4>Light Holder 2</h4>
+                        <p>₹360</p>
+                        <button onclick="addToCart('Light Holder 2', 360)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Lovely design." - Ravi</p>
+                            <p>"Highly recommended." - Poonam</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#light-holder3">
+                            <img src="l3.webp" alt="Light Holder 3" class="item-image">
+                        </a>
+                        <h4>Light Holder 3</h4>
+                        <p>₹370</p>
+                        <button onclick="addToCart('Light Holder 3', 370)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful craftsmanship." - Rakesh</p>
+                            <p>"Great quality." - Sunita</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#light-holder4">
+                            <img src="l4.jpg" alt="Light Holder 4" class="item-image">
+                        </a>
+                        <h4>Light Holder 4</h4>
+                        <p>₹380</p>
+                        <button onclick="addToCart('Light Holder 4', 380)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Excellent design!" - Jyoti</p>
+                            <p>"Very artistic." - Arjun</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#light-holder5">
+                            <img src="l5.png" alt="Light Holder 5" class="item-image">
+                        </a>
+                        <h4>Light Holder 5</h4>
+                        <p>₹390</p>
+                        <button onclick="addToCart('Light Holder 5', 390)">Add to Cart</button>
+                        <div class="reviews">
+                            <h5>Reviews:</h5>
+                            <p>"Beautiful and elegant." - Anu</p>
+                            <p>"Excellent quality." - Tara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p id="totalAmount"></p>
+            <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </section>
+
+        <section id="checkout" class="checkout">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="gpay">GPay</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Terracotta Treasures. All rights reserved.</p>
+    </footer>
+
+    <script src="chiku.js"></script>
+</body>
+</html>

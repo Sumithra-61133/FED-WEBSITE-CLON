@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d9771a;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 150px;
+}
+
+header .site-name {
+    font-size: 2em;
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4a261;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #d9771a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.shop {
+    padding: 20px;
+}
+
+.shop .category {
+    margin-bottom: 20px;
+}
+
+.shop .category h3 {
+    display: flex;
+    align-items: center;
+}
+
+.shop .category-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.shop .category-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop .item {
+    flex: 1 1 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+}
+
+.shop .item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop .item h4 {
+    margin: 10px 0;
+}
+
+.shop .item p {
+    margin: 5px 0;
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart p {
+    font-size: 1.2em;
+}
+
+.checkout {
+    padding: 20px;
+}
+
+.checkout form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout form label {
+    margin: 10px 0 5px;
+}
+
+.checkout form input, .checkout form select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #d9771a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
